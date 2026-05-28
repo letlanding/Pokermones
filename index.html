@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKERMONES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <strong>Pokermones</strong>
+            <span>Control de torneos y balance global</span>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="calculator-card">
+            <div class="screen-header">
+                <span></span>
+                <h1>Pokermones</h1>
+                <span></span>
+            </div>
+
+            <div class="global-box">
+                <p>Balance global</p>
+                <strong id="balanceGlobal">$0.00</strong>
+            </div>
+        </section>
+
+        <section class="history-card">
+            <div class="history-header">
+                <h2>Planilla de torneos</h2>
+
+                <div class="history-actions">
+                    <button id="agregarFila" class="btn primary">Agregar torneo</button>
+                    <button id="borrarHistorial" class="btn danger">Borrar todo</button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Entrada / gasto USD</th>
+                            <th>Premio USD</th>
+                            <th>Balance</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaTorneos"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="image-card">
+            <h2>Posiciones de la mesa</h2>
+            <img src="img/mesa.png" alt="Posiciones de poker" />
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Pokermones — Registro recreativo de torneos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
