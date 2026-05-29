@@ -17,36 +17,29 @@ body {
 
 .site-header {
   width: 100%;
-  padding: 14px 0;
-  background: rgba(0, 0, 0, 0.72);
+  height: 250px;
+  position: relative;
+  overflow: hidden;
   border-bottom: 1px solid rgba(255, 0, 76, 0.35);
   box-shadow: 0 0 18px rgba(255, 0, 76, 0.18);
 }
 
-.header-content {
-  width: min(1100px, 94%);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: center;
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("img/header.png");
+  background-size: 85% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.55;
 }
 
-.header-content strong {
-  color: #ffe86b;
-  font-size: 1.2rem;
-  text-shadow: 0 0 12px #ff004c;
-}
-
-.header-content span {
-  color: #ccc;
-  font-size: 0.9rem;
-}
 
 .page {
   width: min(1100px, 94%);
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 55px 0 40px;
 }
 
 .calculator-card,
@@ -83,7 +76,7 @@ body {
 h1 {
   margin: 0;
   font-family: "Bungee Inline", Arial, sans-serif;
-  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
   font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
